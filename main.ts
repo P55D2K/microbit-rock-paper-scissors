@@ -21,5 +21,5 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 let index = 0
-let bscore = 0
 let ascore = 0
+let bscore = 0
