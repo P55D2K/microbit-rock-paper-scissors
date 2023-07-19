@@ -1,5 +1,6 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("" + (`A${ascore}`))
+    ascore++;
+    basic.showString("" + (`A${ascore} B${bscore}`))
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showString("" + (`A${ascore} B${bscore} ${ascore > bscore ? "A Wins" : bscore > ascore ? "B Wins" : "Tie"}`))
@@ -8,7 +9,8 @@ input.onButtonPressed(Button.AB, function () {
     bscore = 0
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("" + (`B${bscore}`))
+    bscore++;
+    basic.showString("" + (`A${ascore} B${bscore}`))
 })
 input.onGesture(Gesture.Shake, function () {
     index = randint(1, 3)
