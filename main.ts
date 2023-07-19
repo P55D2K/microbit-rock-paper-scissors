@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    ascore++;
+    ascore += 1
     basic.showString("" + (`A${ascore} B${bscore}`))
 })
 input.onButtonPressed(Button.AB, function () {
@@ -9,7 +9,7 @@ input.onButtonPressed(Button.AB, function () {
     bscore = 0
 })
 input.onButtonPressed(Button.B, function () {
-    bscore++;
+    bscore += 1
     basic.showString("" + (`A${ascore} B${bscore}`))
 })
 input.onGesture(Gesture.Shake, function () {
@@ -23,5 +23,5 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 let index = 0
-let ascore = 0
 let bscore = 0
+let ascore = 0
